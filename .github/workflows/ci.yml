@@ -20,8 +20,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
 
-
-
       - name: Install Nix
         uses: cachix/install-nix-action@v31.11.2
         with:
@@ -29,17 +27,19 @@ jobs:
             experimental-features = nix-command flakes
 
       - name: Check formatting
-        run: nix develop --command just ci-fmt-check
+        run: nix develop --command just fmt-check
 
       - name: Run clippy
-        run: nix develop --command just ci-clippy
-
+        run: nix develop --command just clippy
 
       - name: Run tests
         run: nix develop --command just test
 
+      - name: Build feature combinations
+        run: nix develop --command just features
 
-      - name: Run documentation tests
-        run: nix develop --command just test-docs
-        env:
-          RUSTDOCFLAGS: "-D warnings"
+      - name: Build documentation
+        run: nix develop --command just doc
+
+      - name: Check fuzz target
+        run: nix develop --command cargo check --manifest-path fuzz/Cargo.toml

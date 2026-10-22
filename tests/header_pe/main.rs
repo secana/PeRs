@@ -1,0 +1,30 @@
+#[path = "../common/mod.rs"]
+mod common;
+
+mod copyright_test;
+mod image_base_relocation_test;
+mod image_bound_import_descriptor_test;
+mod image_cor20_header_test;
+mod image_data_directory_test;
+mod image_debug_directory_test;
+mod image_delay_import_descriptor_test;
+mod image_dos_header_test;
+mod image_export_directory_test;
+mod image_file_header_test;
+mod image_import_by_name_test;
+mod image_import_descriptor_test;
+mod image_load_config_directory_test;
+mod image_nt_headers_test;
+mod image_optional_header_test;
+mod image_resource_data_entry_test;
+mod image_resource_dir_string_u_test;
+mod image_resource_directory_entry_test;
+mod image_resource_directory_test;
+mod image_section_header_test;
+mod image_thunk_data_test;
+mod image_tls_callback_test;
+mod image_tls_directory_test;
+mod runtime_function_test;
+mod unwind_code_test;
+mod unwind_info_test;
+mod win_certificate_test;

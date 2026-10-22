@@ -1,0 +1,3 @@
+[workspace]
+# Release only if the release PR is merged, not on every push to main
+release_always = false

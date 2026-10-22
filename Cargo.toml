@@ -27,7 +27,7 @@ der = { version = "0.7.10", default-features = false, features = ["alloc", "oid"
 hex = { version = "0.4.3", default-features = false, features = ["alloc"] }
 md-5 = { version = "0.11.0", default-features = false }
 memmap2 = { version = "0.9.11", optional = true }
-p256 = { version = "0.13", default-features = false, features = ["ecdsa"], optional = true }
+p256 = { version = "0.14", default-features = false, features = ["ecdsa"], optional = true }
 p384 = { version = "0.13", default-features = false, features = ["ecdsa"], optional = true }
 rsa = { version = "0.9.10", default-features = false, optional = true }
 sha1 = { version = "0.11.0", default-features = false }

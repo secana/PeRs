@@ -532,7 +532,7 @@ name = "pers"
 version = "0.1.0"
 dependencies = [
  "bitflags",
- "der 0.7.10",
+ "der 0.8.2",
  "hex",
  "md-5",
  "memmap2",
